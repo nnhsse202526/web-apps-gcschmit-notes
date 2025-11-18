@@ -24,10 +24,14 @@ journalEntry = {
   content:
     "I'm very familiar with Java, but I'm approaching Javascript " +
     "with an open mind.",
+  getLength() {
+    return this.content.length; // this refers to the object, similar to Java
+  },
 };
 
 console.log(journalEntry);
 console.log(typeof journalEntry);
+console.log(journalEntry.getLength());
 
 /**
  * Accessing properties
