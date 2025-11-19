@@ -6,6 +6,12 @@
       "request": "launch",
       "name": "Debug arrays.js",
       "program": "${workspaceFolder}/arrays.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug functions.js",
+      "program": "${workspaceFolder}/functions.js"
     }
   ]
 }
