@@ -16,3 +16,16 @@ const button = document.querySelector("button.demo");
 button.addEventListener("click", () => {
   alert("Ouch! Stop poking me!");
 });
+
+// client-side Javascript can modify the attributes of HTML elements in
+//  response to events
+const myImage = document.querySelector("img");
+myImage.addEventListener("click", () => {
+  const mySrc = myImage.getAttribute("src");
+  if (mySrc === "images/firefox-icon.png") {
+    mySrc = "images/SE-GitHub-image.png";
+    myImage.setAttribute("src", "images/SE-GitHub-image.png");
+  } else {
+    myImage.setAttribute("src", "images/firefox-icon.png");
+  }
+});
